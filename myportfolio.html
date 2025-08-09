@@ -1,0 +1,151 @@
+<!--
+  Asjad Raja - Personal Portfolio
+  - Open this file in a browser to preview
+  - Edit the sections: About, Projects, Skills, Contact
+  - Replace placeholder project links and images with your own
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Asjad Raja — Portfolio</title>
+  <meta name="description" content="Portfolio of Asjad Raja — Software Engineer / Front-end Developer" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:linear-gradient(180deg,#071024 0%,var(--bg) 100%);color:#e6eef8;-webkit-font-smoothing:antialiased}
+    .container{max-width:1000px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#021124}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .intro h2{margin:0 0 8px;font-size:22px}
+    .cta{margin-top:14px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#021124;font-weight:600;text-decoration:none}
+    .meta{margin-top:12px;color:var(--muted);font-size:14px}
+    .sidebar .stat{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,0.03)}
+    section{margin-top:26px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .project{padding:14px;border-radius:12px;background:var(--glass);border:1px solid rgba(255,255,255,0.02)}
+    .project h3{margin:0 0 6px}
+    .tags{margin-top:8px;font-size:13px;color:var(--muted)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;border:1px solid rgba(255,255,255,0.02)}
+    footer{margin-top:40px;text-align:center;color:var(--muted);font-size:14px}
+    @media (max-width:880px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">AR</div>
+        <div>
+          <h1>Asjad Raja</h1>
+          <p class="lead">Software Engineer • Front‑end Developer • Problem Solver</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="card intro">
+        <h2>Hi — I'm Asjad.</h2>
+        <p class="meta">I build user-friendly, accessible web apps with a focus on performance and clean design. Currently studying Software Engineering and working on front-end projects.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">See my work</a>
+          <a style="margin-left:10px;color:var(--muted);text-decoration:none" href="#contact">Get in touch</a>
+        </div>
+
+        <section id="about">
+          <h3 style="margin-top:18px">About me</h3>
+          <p class="meta">I'm a Software Engineering student passionate about building interactive web apps. I enjoy learning new frameworks, improving accessibility, and contributing to open-source.</p>
+        </section>
+
+      </div>
+
+      <aside class="card sidebar">
+        <div class="stat"><strong>Location</strong><span>India</span></div>
+        <div class="stat"><strong>Email</strong><span>rasjad718.com</span></div>
+        <div class="stat"><strong>Availability</strong><span>Open to work / freelance</span></div>
+        <div style="margin-top:12px;text-align:center">
+          <a class="btn" href="mailto:rasjad718.com">Email me</a>
+        </div>
+      </aside>
+    </div>
+
+    <section id="projects" class="card">
+      <h2>Selected projects</h2>
+      <p class="meta">A few highlights — click to view source or demo (replace with your real links).</p>
+
+      <div class="grid" style="margin-top:14px">
+        <article class="project">
+          <h3>Project One — Todo App</h3>
+          <p class="meta">A fast, accessible todo app built with vanilla JS and localStorage for persistence.</p>
+          <div class="tags">JavaScript • HTML • CSS</div>
+          <div style="margin-top:10px"><a href="#" style="text-decoration:none;color:var(--accent)">View code</a> · <a href="#" style="text-decoration:none;color:var(--accent)">Live demo</a></div>
+        </article>
+
+        <article class="project">
+          <h3>Project Two — Portfolio Site</h3>
+          <p class="meta">A responsive portfolio template with smooth navigation and lightweight animations.</p>
+          <div class="tags">HTML • CSS • Accessibility</div>
+          <div style="margin-top:10px"><a href="#" style="text-decoration:none;color:var(--accent)">View code</a> · <a href="#" style="text-decoration:none;color:var(--accent)">Live demo</a></div>
+        </article>
+
+        <article class="project">
+          <h3>Project Three — Notes App</h3>
+          <p class="meta">A PWA notes app with offline support and sync capabilities (prototype).</p>
+          <div class="tags">React • Service Worker • IndexedDB</div>
+          <div style="margin-top:10px"><a href="#" style="text-decoration:none;color:var(--accent)">View code</a> · <a href="#" style="text-decoration:none;color:var(--accent)">Live demo</a></div>
+        </article>
+
+        <article class="project">
+          <h3>Project Four — E‑commerce UI</h3>
+          <p class="meta">Design-focused product listing and checkout flow, optimized for conversions.</p>
+          <div class="tags">Figma • Tailwind • React</div>
+          <div style="margin-top:10px"><a href="#" style="text-decoration:none;color:var(--accent)">View code</a> · <a href="#" style="text-decoration:none;color:var(--accent)">Live demo</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div style="margin-top:10px" class="skills">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">React</span>
+        <span class="chip">Git</span>
+        <span class="chip">Accessibility</span>
+        <span class="chip">Performance</span>
+      </div>
+    </section>
+
+    <section id="contact-9523496882" class="card">
+      <h2>Contact</h2>
+      <p class="meta">Want to collaborate? Send me an email or connect on GitHub / LinkedIn.</p>
+      <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap">
+        <a class="chip" href="https://github.com/your-asjad1094" target="_blank">GitHub</a>
+        <a class="chip" href="https://linkedin.com/in/your-asjad raja" target="_blank">LinkedIn</a>
+        <a class="chip" href="mailto:rasjad718@gmail.com">rasjad718@gmail.com</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made with ❤️ — Asjad Raja • <small style="color:var(--muted)">Download: Right-click → Save As</small></p>
+    </footer>
+  </div>
+</body>
+</html>
